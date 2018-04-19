@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <Appender name="%user_logger_name%" class="com.splunk.logging.HttpEventCollectorLogbackAppender">
+    <Appender name="SPLUNK" class="com.splunk.logging.HttpEventCollectorLogbackAppender">
         <url>http://139.162.225.202:8088/</url>
         <token>618906f6-24d5-4fb9-8069-869910baff0b</token>
         <disableCertificateValidation>true</disableCertificateValidation>	
@@ -15,7 +15,7 @@
     </logger>
 
       
-    <root level="trace">
+    <!--root level="trace">
         <appender-ref ref="SPLUNK" />
-    </root>
+    </root-->
 </configuration>
